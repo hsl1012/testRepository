@@ -13,14 +13,14 @@ import java.util.Map;
 public class CategoryServiceImpl implements CategoryService {
 
     @Resource
-    private CategoryMapper categoryMapper1;
+    private CategoryMapper categoryMapper;
 
     //查询
     public List<Map<String, Object>> queryList() {
 
 
         //查询所有的节点
-        List<Map<String, Object>> allList=  categoryMapper1.queryList();
+        List<Map<String, Object>> allList=  categoryMapper.queryList();
 
         //父节点
         List<Map<String, Object>> parentList=  new ArrayList<Map<String, Object>>();
