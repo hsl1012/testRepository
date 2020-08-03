@@ -22,7 +22,7 @@ public class CategoryServiceImpl implements CategoryService {
         //查询所有的节点
         List<Map<String, Object>> allList=  categoryMapper.queryList();
 
-        //父节点
+        //父节点//
         List<Map<String, Object>> parentList=  new ArrayList<Map<String, Object>>();
 
 
